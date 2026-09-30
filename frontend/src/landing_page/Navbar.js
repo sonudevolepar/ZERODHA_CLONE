@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,13 +10,13 @@ function Navbar() {
       <div className="container">
 
         {/* Zerodha Logo */}
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img
             src="/media/image/logo.svg"
             alt="Zerodha"
             style={{ width: "130px" }}
           />
-        </a>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -37,34 +38,54 @@ function Navbar() {
         >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
 
+            {/* Signup */}
             <li className="nav-item">
-              <a className="nav-link px-3" href="/signup">
+              <Link
+                className="nav-link px-3"
+                to="/signup"
+              >
                 Signup
-              </a>
+              </Link>
             </li>
 
+            {/* About */}
             <li className="nav-item">
-              <a className="nav-link px-3" href="/about">
+              <Link
+                className="nav-link px-3"
+                to="/about"
+              >
                 About
-              </a>
+              </Link>
             </li>
 
+            {/* Products */}
             <li className="nav-item">
-              <a className="nav-link px-3" href="/products">
+              <Link
+                className="nav-link px-3"
+                to="/product"
+              >
                 Products
-              </a>
+              </Link>
             </li>
 
+            {/* Pricing */}
             <li className="nav-item">
-              <a className="nav-link px-3" href="/pricing">
+              <Link
+                className="nav-link px-3"
+                to="/pricing"
+              >
                 Pricing
-              </a>
+              </Link>
             </li>
 
+            {/* Support */}
             <li className="nav-item">
-              <a className="nav-link px-3" href="/support">
+              <Link
+                className="nav-link px-3"
+                to="/support"
+              >
                 Support
-              </a>
+              </Link>
             </li>
 
             {/* Hamburger */}
